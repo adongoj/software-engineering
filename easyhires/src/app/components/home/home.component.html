@@ -1,0 +1,90 @@
+
+
+<div class="sect sect1">
+  <div class="container-fluid">
+    <!--		<div class="row">-->
+    <div class="col-md-12">
+      <h1 class="shake"> WELCOME<br>     AFIEWURA</h1>
+      <h2> RENT YOUR APARTMENT</h2>
+       <br><br> <br><br>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-3 col-lg-6">
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btnorange" type="button">Search</button>
+      </span>
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+
+  </div>
+</div>
+<div class="subsection">
+  <div class="property-find-table">
+    <div class="container">
+      <div class="center_this">
+        <h2>FIND YOUR PROPERTY</h2>
+      </div>
+      <form action="#" class="form-inline">
+        <div class="form-group single-select-menu col-lg-3 col-md-3 col-sm-4 col-xm-12 styleOne">
+          <label>BEDROOM</label>
+          <select class="selectpicker form-control">
+            <option>Any bedroom</option>
+            <option>2 Bedroom</option>
+            <option>3 Bedroom</option>
+          </select>
+        </div> <!-- /.single-select-menu -->
+
+        <div class="form-group single-select-menu col-lg-3 col-md-3 col-sm-4 col-xm-12 styleOne">
+          <label>BATHROOM</label>
+          <select class="selectpicker form-control">
+            <option>Any bathroom</option>
+            <option>2 Bathroom</option>
+            <option>3 Bathroom</option>
+          </select>
+        </div> <!-- /.single-select-menu -->
+
+        <div class="form-group single-select-menu styleOne col-lg-3 col-md-3 col-sm-4 col-xm-12">
+          <label>Location</label>
+          <select class="selectpicker form-control">
+            <option>Any Location</option>
+            <option>Tema</option>
+            <option>Achiman</option>
+            <option>Adenta</option>
+          </select>
+        </div> <!-- /.single-select-menu -->
+
+        <div class="form-group single-select-menu styleOne col-lg-3 col-md-3 col-sm-4 col-xm-12">
+          <label>District</label>
+          <select class="selectpicker form-control">
+            <option>Any District</option>
+            <option>AA District</option>
+            <option>BB District</option>
+            <option>CC District</option>
+          </select>
+        </div> <!-- /.single-select-menu -->
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="subsection ">
+  <div class="container">
+    <ul style="color:black;" *ngFor="let post of posts">
+
+    <!--            <div class="row">-->
+    <a href=""> <div class=" polaroid col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <img src="assets/images/image2.jpg" alt="Norway">
+      <div class="textme">
+          {{post.username}}
+      </div>
+    </div>
+    </a>
+
+    </ul>
+  </div>
+</div>
+
+

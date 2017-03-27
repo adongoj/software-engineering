@@ -1,0 +1,107 @@
+
+<!--login section-->
+<div class="subsection">
+  <div class="property-find-table">
+    <div class="container">
+      <div class="center_this">
+        <h2>FIND YOUR PROPERTY</h2>
+      </div>
+      <form action="#" class="form-inline">
+        <div class="form-group single-select-menu col-lg-3 col-md-3 col-sm-4 col-xm-12 styleOne">
+          <label>BEDROOM</label>
+          <select class="selectpicker form-control">
+            <option>Any bedroom</option>
+            <option>2 Bedroom</option>
+            <option>3 Bedroom</option>
+          </select>
+        </div>
+
+        <div class="form-group single-select-menu col-lg-3 col-md-3 col-sm-4 col-xm-12 styleOne">
+          <label>BATHROOM</label>
+          <select class="selectpicker form-control">
+            <option>Any bathroom</option>
+            <option>2 Bathroom</option>
+            <option>3 Bathroom</option>
+          </select>
+        </div>
+
+        <div class="form-group single-select-menu styleOne col-lg-3 col-md-3 col-sm-4 col-xm-12">
+          <label>Location</label>
+          <select class="selectpicker form-control">
+            <option>Any Location</option>
+            <option>Tema</option>
+            <option>Achiman</option>
+            <option>Adenta</option>
+          </select>
+        </div>
+
+        <div class="form-group single-select-menu styleOne col-lg-3 col-md-3 col-sm-4 col-xm-12">
+          <label>District</label>
+          <select class="selectpicker form-control">
+            <option>Any District</option>
+            <option>AA District</option>
+            <option>BB District</option>
+            <option>CC District</option>
+          </select>
+        </div>
+
+
+        <!--
+                                <div class="form-group single-select-menu col-lg-3 col-md-3 col-sm-4 col-xm-12 styleOne">
+                                    <label>STATUS </label>
+                                    <select class="selectpicker form-control">
+                                      <option>Any</option>
+                                      <option>Rent</option>
+                                      <option>Buy</option>
+                                    </select>
+                                </div>
+        -->
+
+        <!--
+                                 <div class="form-group single-select-menu col-lg-6 col-md-6 col-sm-6 col-xm-12 styleOne">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <button type="submit" class="btn searchbtn">Submit</button>
+                            </div>
+        -->
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="subsection ">
+  <div class="container">
+    <!--            <div class="row">-->
+
+  <ul *ngFor="let post of posts">
+    <a href=""><div class="polaroid col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <img src="assets/images/image3.jpg" alt="Norway">
+      <div class="textme">
+        {{post.username}}
+      </div>
+    </div>
+   </a>
+  </ul>
+  </div>
+</div>
+
+<!--TODO: add angular2 bootstrap pagination-->
+
+<nav class="paginate" aria-label="Page navigation">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
